@@ -1,0 +1,7 @@
+E:/D drive/setup_F446/F446re_candriver_I2C_DMA_MOD/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Src/candriver.c:17:6:can_gpio_init	8	static
+../Src/candriver.c:38:6:can_params_init	16	static
+../Src/candriver.c:73:6:can_start	4	static
+../Src/candriver.c:90:9:can_add_tx_message	32	static
+../Src/candriver.c:162:9:can_get_rx_message	24	static
+../Src/candriver.c:229:6:can_filter_config	16	static

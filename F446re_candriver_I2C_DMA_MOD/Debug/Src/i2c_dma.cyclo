@@ -1,0 +1,8 @@
+E:/D drive/setup_F446/F446re_candriver_I2C_DMA_MOD/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Src/i2c_dma.c:57:6:I2C1_Init	1
+../Src/i2c_dma.c:116:6:i2c1_init	1
+../Src/i2c_dma.c:199:6:dma1_stream6_i2c1_tx_init	2
+../Src/i2c_dma.c:232:6:dma1_stream6_i2c1_transfer	2
+../Src/i2c_dma.c:262:6:i2c_dma_write	6
+../Src/i2c_dma.c:303:6:I2C1_burstWrite	9
+../Src/i2c_dma.c:356:6:DMA1_Stream6_IRQHandler	2
