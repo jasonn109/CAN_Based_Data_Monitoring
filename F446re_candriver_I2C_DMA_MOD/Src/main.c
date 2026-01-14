@@ -9,8 +9,6 @@
 #include "ssd1306.h"
 
 
-
-
 uint8_t rx_data[6];
 uint8_t tx_data[5];
 int16_t x,y,z;
@@ -29,14 +27,6 @@ void CAN1_RX0_IRQHandler(void)
 		can_get_rx_message(CAN_RX_FIFO0, &rx_header, rx_data);
 		count++;
 
-
-		printf("FIFIO 0 rx_data 0 %d\n\r",rx_data[0]);
-		printf("FIFIO 0 rx_data 1 %d\n\r",rx_data[1]);
-		printf("FIFIO 0 rx_data 2 %d\n\r",rx_data[2]);
-		printf("FIFIO 0 rx_data 3 %d\n\r",rx_data[3]);
-		printf("FIFIO 0 rx_data 4 %d\n\r",rx_data[4]);
-		printf("FIFIO 0 rx_data 5 %d\n\r",rx_data[5]);
-
 	}
 
 }
@@ -47,14 +37,6 @@ void CAN1_RX1_IRQHandler(void)
 	{
 		can_get_rx_message(CAN_RX_FIFO1, &rx_header, rx_data);
 		count++;
-
-
-		printf("FIFIO 1 rx_data 0 %d\n\r",rx_data[0]);
-		printf("FIFIO 1 rx_data 1 %d\n\r",rx_data[1]);
-		printf("FIFIO 1 rx_data 2 %d\n\r",rx_data[2]);
-		printf("FIFIO 1 rx_data 3 %d\n\r",rx_data[3]);
-		printf("FIFIO 1 rx_data 4 %d\n\r",rx_data[4]);
-		printf("FIFIO 1 rx_data 5 %d\n\r",rx_data[5]);
 	}
 
 }

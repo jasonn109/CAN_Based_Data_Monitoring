@@ -53,31 +53,21 @@ void USB_LP_CAN_RX0_IRQHandler(void)
 		can_get_rx_message(CAN_RX_FIFO0, &rx_header, rx_data);
 		count_0++;
 	}
-	else if((CAN1->RF1R & CAN_RF1R_FMP1) != 0U)
-	{
-		can_get_rx_message(CAN_RX_FIFO0, &rx_header, rx_data);
-		count_1++;
-	}
 }
 int main()
 {
 	adxl_init();
-	 config_rcc();
+	config_rcc();
 	can_gpio_init();
 
 	can_params_init(CAN_MODE_NORMAL);
 	can_filter_config(0x204);
-		can_start();
+	can_start();
 
-		uart1_init();
-
-
+	uart1_init();
 
 		while(1)
 		{
-
-
-
 
 			adxl_read_values(DATA_START_ADDR);
 
